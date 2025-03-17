@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação - Campeonato Brasileiro 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <h1>Classificação - Campeonato Brasileiro 2024</h1>
+
+    <table>
+        <tr>
+            <th>Imagem</th>
+            <th>Posição</th>
+            <th>Time</th>
+            <th>Pontos</th>
+            <th>Qtd. Jogos</th>
+            <th>Qtd. Vitórias</th>
+            <th>Qtd. Derrotas</th>
+            <th>Ações</th>
+        </tr>
+        <tr id="row1" onmouseover="this.style.backgroundColor='#f2f2f2'" onmouseout="this.style.backgroundColor=''">
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Escudo_Botafogo.png/50px-Escudo_Botafogo.png" alt="Botafogo"></td>
+            <td>1</td>
+            <td><a href="https://www.botafogo.com.br" target="_blank">Botafogo</a></td>
+            <td>79</td>
+            <td>10</td>
+            <td>9</td>
+            <td>1</td>
+            <td>
+                <button onclick="changeColor()">Alterar Cor</button>
+                <button onclick="changeColorWithId('row1')">Alterar Cor com ID</button>
+                <button onclick="showTeamName(this)">Exibir Nome</button>
+            </td>
+        </tr>
+        <tr id="row2" onmouseover="this.style.backgroundColor='#f2f2f2'" onmouseout="this.style.backgroundColor=''">
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/50px-Palmeiras_logo.svg.png" alt="Palmeiras"></td>
+            <td>2</td>
+            <td><a href="https://www.palmeiras.com.br" target="_blank">Palmeiras</a></td>
+            <td>73</td>
+            <td>10</td>
+            <td>8</td>
+            <td>2</td>
+            <td>
+                <button onclick="changeColor()">Alterar Cor</button>
+                <button onclick="changeColorWithId('row2')">Alterar Cor com ID</button>
+                <button onclick="showTeamName(this)">Exibir Nome</button>
+            </td>
+        </tr>
+        <tr id="row3" onmouseover="this.style.backgroundColor='#f2f2f2'" onmouseout="this.style.backgroundColor=''">
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/50px-Flamengo_braz_logo.svg.png" alt="Flamengo"></td>
+            <td>3</td>
+            <td><a href="https://www.flamengo.com.br" target="_blank">Flamengo</a></td>
+            <td>70</td>
+            <td>10</td>
+            <td>7</td>
+            <td>3</td>
+            <td>
+                <button onclick="changeColor()">Alterar Cor</button>
+                <button onclick="changeColorWithId('row3')">Alterar Cor com ID</button>
+                <button onclick="showTeamName(this)">Exibir Nome</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
